@@ -10,11 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    // MARK: -Globals
     let layout = UICollectionViewLayout()
     
     var menuBar : UICollectionView!
     
-    lazy var searchBar = UISearchBar(frame: .zero)
     let cellId = "cellId"
     let options = ["Recommend", "COVID-19", "News", "Sports"]
     

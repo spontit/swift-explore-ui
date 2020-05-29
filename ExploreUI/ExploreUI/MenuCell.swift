@@ -11,6 +11,7 @@ import UIKit
 
 class MenuCell : UICollectionViewCell {
     
+    // MARK: -Globals
     var title : UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
@@ -18,6 +19,7 @@ class MenuCell : UICollectionViewCell {
         return lbl
     }()
     
+    // MARK: -Overriden Functions
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setUp()
@@ -27,6 +29,7 @@ class MenuCell : UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: -Helpler Functions
     private func setUp() {
         self.contentView.addSubview(self.title)
         self.title.center.x = self.contentView.center.x

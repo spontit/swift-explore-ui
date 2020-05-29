@@ -11,26 +11,6 @@ import UIKit
 
 class MenuBar: UICollectionView {
     
-    
-    
-    
-//    let collectionView : UICollectionView = {
-//        let layout = UICollectionViewLayout()
-//        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-//        cv.backgroundColor = .black
-//        return cv
-//    }()
-//
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        //self.backgroundColor = .red
-//        self.addSubview(self.collectionView)
-//        self.collectionView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-//        self.collectionView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//        self.collectionView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-//        self.collectionView.backgroundColor = .black
-//        self.bringSubviewToFront(self.collectionView)
-//    }
     let cellId = "cellId"
     
     init(frame: CGRect) {
