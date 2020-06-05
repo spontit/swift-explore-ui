@@ -15,7 +15,7 @@ class MenuCell : UICollectionViewCell {
     var title : UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.textColor = .white
+        lbl.textColor = .black
         return lbl
     }()
     
@@ -25,6 +25,18 @@ class MenuCell : UICollectionViewCell {
         self.setUp()
     }
     
+    override var isHighlighted: Bool {
+        didSet {
+            self.title.textColor = isHighlighted ? .white : .black
+        }
+    }
+    
+    override var isSelected: Bool {
+        didSet {
+            self.title.textColor = isSelected ? .white : .black
+        }
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -32,8 +44,10 @@ class MenuCell : UICollectionViewCell {
     //MARK: -Helpler Functions
     private func setUp() {
         self.contentView.addSubview(self.title)
-        self.title.center.x = self.contentView.center.x
-        self.title.center.y = self.contentView.center.y
+        self.backgroundColor = .orange
+
+        self.title.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor).isActive = true
+        self.title.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
     }
     
 }

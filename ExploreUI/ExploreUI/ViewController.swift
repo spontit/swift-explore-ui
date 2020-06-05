@@ -1,19 +1,26 @@
 import SwipeViewController
 import UIKit
 
-class ViewController: SwipeViewController {
+class ViewController: UIViewController {
+    
+    let menuBar: MenuBar = {
+        let mb = MenuBar()
+        return mb
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
 //        let barButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(push))
 //        barButtonItem.tintColor = .black
 //        leftBarButtonItem = barButtonItem
+        self.setUpMenuBar()
     }
 
-    @objc func push(sender _: UIBarButtonItem) {
-        let VC4 = UIViewController()
-        VC4.view.backgroundColor = UIColor.purple
-        VC4.title = "Cool"
-        pushViewController(VC4, animated: true)
+    private func setUpMenuBar() {
+        self.view.addSubview(self.menuBar)
+        self.menuBar.widthAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true
+        self.menuBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.menuBar.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
     }
 }
