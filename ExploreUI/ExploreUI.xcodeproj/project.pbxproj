@@ -19,7 +19,7 @@
 		A26EDD01248197D800087A4B /* ExploreUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EDD00248197D800087A4B /* ExploreUIUITests.swift */; };
 		A26EDD0F2481981D00087A4B /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EDD0E2481981D00087A4B /* MenuBar.swift */; };
 		A26EDD112481A52100087A4B /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EDD102481A52100087A4B /* MenuCell.swift */; };
-		A26EDD152489AEF500087A4B /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EDD142489AEF500087A4B /* TestController.swift */; };
+		A26EDD152489AEF500087A4B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EDD142489AEF500087A4B /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 		A26EDD02248197D800087A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26EDD0E2481981D00087A4B /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		A26EDD102481A52100087A4B /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		A26EDD142489AEF500087A4B /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		A26EDD142489AEF500087A4B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		B5C72A421E210E8F57570660 /* Pods-ExploreUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreUI.debug.xcconfig"; path = "Target Support Files/Pods-ExploreUI/Pods-ExploreUI.debug.xcconfig"; sourceTree = "<group>"; };
 		B70189F94AE21CEF4C2EB049 /* Pods_ExploreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C9E19DE0589ABB5653223C /* Pods_ExploreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +138,7 @@
 				A26EDCEC248197D800087A4B /* Info.plist */,
 				A26EDD0E2481981D00087A4B /* MenuBar.swift */,
 				A26EDD102481A52100087A4B /* MenuCell.swift */,
-				A26EDD142489AEF500087A4B /* TestController.swift */,
+				A26EDD142489AEF500087A4B /* TestViewController.swift */,
 			);
 			path = ExploreUI;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 				A26EDCE3248197D400087A4B /* ViewController.swift in Sources */,
 				A26EDD112481A52100087A4B /* MenuCell.swift in Sources */,
 				A26EDCDF248197D400087A4B /* AppDelegate.swift in Sources */,
-				A26EDD152489AEF500087A4B /* TestController.swift in Sources */,
+				A26EDD152489AEF500087A4B /* TestViewController.swift in Sources */,
 				A26EDD0F2481981D00087A4B /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
