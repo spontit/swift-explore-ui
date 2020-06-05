@@ -27,8 +27,8 @@ class TestViewController: UICollectionViewController, UICollectionViewDelegateFl
 
         collectionView.backgroundColor = .green
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
-        collectionView.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
-        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: MenuBar.MENU_BAR_HEIGHT, left: 0, bottom: 0, right: 0)
+        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: MenuBar.MENU_BAR_HEIGHT, left: 0, bottom: 0, right: 0)
 
         collectionView.isPagingEnabled = true
         collectionView.isScrollEnabled = true
@@ -73,7 +73,7 @@ class TestViewController: UICollectionViewController, UICollectionViewDelegateFl
     private func setUpMenuBar() {
         self.view.addSubview(self.menuBar)
         self.menuBar.widthAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true
-        self.menuBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.menuBar.heightAnchor.constraint(equalToConstant: MenuBar.MENU_BAR_HEIGHT).isActive = true
         self.menuBar.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
     }
     
