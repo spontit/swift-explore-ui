@@ -81,7 +81,7 @@ extension MenuBar: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.frame.width/4, height: 50)
+        return CGSize(width: self.frame.width/4, height: MenuBar.MENU_BAR_HEIGHT)
     }
     
     
